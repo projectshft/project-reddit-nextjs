@@ -32,7 +32,7 @@ export default function Home() {
 						</div>
 
 						<div className='posts'>{/* Render posts here */}</div>
-						<PostsList upVote={upVote} posts={posts} />
+						<PostsList posts={posts} />
 						<PostForm addPost={addPost} />
 					</div>
 				</div>
