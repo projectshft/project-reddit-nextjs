@@ -1,8 +1,8 @@
 import React from 'react';
 import Post from './Post';
 
-const PostsList = (props) => {
-	const postItems = props.posts.map((post, index) => (
+const PostsList = ({ posts }) => {
+	const postItems = posts.map((post, index) => (
 		<Post key={index} post={post} />
 	));
 
