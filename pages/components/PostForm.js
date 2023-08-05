@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
-function PostForm({ addPost }) {
+import { usePosts } from '../contexts/postsContext';
+function PostForm() {
+	const { addPost } = usePosts();
 	const [user, setUser] = useState('');
 	const [text, setText] = useState('');
 

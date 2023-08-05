@@ -1,15 +1,8 @@
 import Head from 'next/head';
 import PostForm from './components/PostForm';
 import PostsList from './components/PostList';
-import { useState } from 'react';
 
 export default function Home() {
-	const [posts, setPosts] = useState([]);
-
-	const addPost = (post) => {
-		setPosts([...posts, post]);
-	};
-
 	return (
 		<>
 			<Head>
@@ -32,8 +25,8 @@ export default function Home() {
 						</div>
 
 						<div className='posts'>{/* Render posts here */}</div>
-						<PostsList posts={posts} />
-						<PostForm addPost={addPost} />
+						<PostsList />
+						<PostForm />
 					</div>
 				</div>
 			</main>
