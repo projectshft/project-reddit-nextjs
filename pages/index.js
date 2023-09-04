@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import PostForm from './components/PostForm';
 import PostsList from './components/PostList';
 import { useState } from 'react';
